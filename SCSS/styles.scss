@@ -1,0 +1,191 @@
+@import "./variables/variables";
+@import "./preferenses/preferenses";
+@import "./general/general";
+@import "./layout/layout";
+
+
+.logo-container {
+    width: 1170px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 200px;
+    height: 35px;
+
+    svg {
+        margin: 22px 0;
+    }
+}
+
+.service {
+    margin: 0 auto;
+    width: 1170px;
+    height: 461px;
+    left: 135px;
+    top: 135px;
+}
+
+.tittles {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 40px;
+
+    h4 {
+        width: 108px;
+        height: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    h1 {
+        margin: 15px 0 0;
+        width: 377px;
+        height: 46px;
+        left: 0;
+        top: 35px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 52px;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+
+    div:last-child {
+        margin: 0;
+    }
+
+    &__box{
+        width: 370px;
+        height: 298px;
+        margin: 0 30px 0 0;
+        padding: 40px 40px 0;
+        border: 1px solid $lines-color;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+    } 
+
+    img {
+        width: 38.75px;
+        height: 36px;
+        }
+    }
+
+    h3 {
+        width: 80px;
+        height: 20px;
+        margin: 29px 0 15px;
+    }
+
+    p {
+        width: 275px;
+        height: 80px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        color: $secondary-color;
+    }
+
+    a {
+        width: 90px;
+        height: 20px;
+        margin: 30px 0 40.5px;
+        color: $links-color;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+}
+
+.image-wrap {
+    border: 1px solid $lines-color;
+    width: 38.75px;
+    height: 36px;
+    border-radius: 16px;
+    padding: 14px 12.25px 14px 13px;
+    position: relative;
+
+    &__icon-green {
+        position: absolute;
+        left: 14px;
+        opacity: 0;
+        transition: 0.5s ease all;
+    }
+
+    &__icon-blue {
+        position: absolute;
+        left: 14px;
+        opacity: 1;
+        transition: 0.5s ease all;
+    }
+
+    &:hover &__icon-green {
+        opacity: 1;
+    }
+
+    &:hover &__icon-blue {
+        opacity: 0;
+    }
+}
+
+// .speaker:hover {
+//     background-image: url(/images/Icons.svg);
+//     background-position-y: -8px;
+//     background-position-x: -9px;
+// }
+
+// .building:hover {
+//     background-image: url(/images/Icons.svg);
+// }
+
+
+.logo-footer {
+    width: 200px;
+    height: 35px;
+    padding: 42.5px 136.06px 0;
+    display: flex;
+    justify-items: flex-start;
+
+    a {
+        margin: 3px 0;
+    }
+
+    h1 {
+        margin: 0 12.55px;
+        color: $primary-color;
+        font-family: 'Quicksand';
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
+.social {
+    width: 289px;
+    height: 40px;
+    margin: 0 90px;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            background-color: $primary-color;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
