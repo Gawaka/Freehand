@@ -114,6 +114,11 @@
     border-radius: 16px;
     padding: 14px 12.25px 14px 13px;
     position: relative;
+    transition: 0.5s ease all;
+
+    &:hover {
+        border-color: $links-color;
+    }
 
     &__icon-green {
         position: absolute;
@@ -180,6 +185,10 @@
 
         li {
             list-style: none;
+
+            :hover {
+                background-color: $button-color;
+            }
         }
 
         a {
