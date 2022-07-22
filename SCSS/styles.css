@@ -412,6 +412,9 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.content__box:hover {
+  border: 1px solid #3DB370;
+}
 .content img {
   width: 38.75px;
   height: 36px;
